@@ -502,7 +502,7 @@ footer .copyright p {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100vh;
-  background: url("../images/png/coming-soon-bg.png") no-repeat center center;
+  background: url("../../images/png/coming-soon-bg.png") no-repeat center center;
 }
 
 .countdown-section .countdown-section__container h2 {

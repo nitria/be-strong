@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
   height: calc(960px / 2);
-  background: $bgColor url("../assets/images/webp/hero-bg-home.webp") no-repeat
+  background: $bgColor url("/assets/images/webp/hero-bg-home.webp") no-repeat
     center top;
   background-size: cover;
   &::after {

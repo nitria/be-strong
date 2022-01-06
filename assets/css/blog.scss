@@ -1,0 +1,200 @@
+@import "./main.scss";
+
+.hero-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: calc(734px / 2);
+  background: $bgColor url("/assets/images/jpg/hero-bg-blog.jpg") no-repeat
+    center center;
+  background-size: cover;
+  .container {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    .hero-section__description {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+
+      h2 {
+        color: $white;
+        font-size: 1.2rem;
+        font-weight: bold;
+        font-style: italic;
+        font-family: "roboto" Arial, Helvetica, sans-serif;
+        margin-bottom: 40px;
+        span {
+          color: $primaryColor;
+        }
+      }
+      p {
+        font-size: 0.8rem;
+        margin: 0;
+        color: $white;
+        a {
+          font-weight: 800;
+          color: $white;
+          text-decoration: none;
+          &:hover {
+            color: $primaryColor;
+          }
+        }
+      }
+    }
+  }
+}
+.blog-section {
+  padding: 5rem 0 3rem;
+  .blog {
+    max-width: 600px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 5rem;
+    .info {
+      span {
+        color: rgba($darkGray, $alpha: 0.8);
+        line-height: 3rem;
+      }
+      h2 {
+        font-weight: 600;
+      }
+      p {
+        max-width: 600px;
+        width: 100%;
+      }
+      .blog-btn {
+        text-decoration: none;
+        background-color: $primaryColor;
+        color: $white;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+      }
+    }
+  }
+  aside {
+    .recent-posts {
+      max-width: 600px;
+      margin: auto;
+    }
+    .title {
+      margin-bottom: 2rem;
+      h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+    }
+    .recent-posts__post {
+      display: flex;
+      flex-direction: row;
+      margin: 2rem 0;
+      img {
+        max-width: 150px;
+        width: 100%;
+      }
+      .info {
+        margin-left: 1rem;
+        .date {
+          span {
+            color: rgba($color: #100f0f, $alpha: 0.8);
+            font-size: 1rem;
+          }
+        }
+        .title {
+          max-width: 200px;
+          width: 100;
+          h3 {
+            font-weight: bold;
+            font-size: 1.3rem;
+          }
+        }
+      }
+    }
+    .categories {
+      margin-top: 6rem;
+      max-width: 200px;
+      ul {
+        list-style: none;
+        padding: 0;
+        li {
+          padding-bottom: 0.3rem;
+          margin-bottom: 1rem;
+          border-bottom: 1px solid $primaryColor;
+          &:hover > a i {
+            margin-right: 1.5rem;
+          }
+          a {
+            text-decoration: none;
+            color: $black;
+            font-family: "roboto", Arial, Helvetica, sans-serif;
+            i {
+              color: $primaryColor;
+              font-size: 0.8rem;
+              margin-right: 0.3rem;
+              transition: 0.3s;
+            }
+          }
+        }
+      }
+    }
+  }
+  .page-link {
+    color: $primaryColor;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-section {
+    .container {
+      .hero-section__description {
+        h2 {
+          font-size: 3rem;
+          margin-bottom: 80px;
+        }
+        p {
+          font-size: 1.25rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 992px) {
+  .blog-section {
+    padding: 140px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-section {
+    height: calc(960px);
+    .container {
+      .hero-section__description {
+        h2 {
+          font-size: 4rem;
+          margin-bottom: 260px;
+        }
+        p {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1920px) {
+  .container {
+    max-width: 1580px;
+  }
+  .hero-section {
+    .container {
+      .hero-section__description {
+        margin-bottom: 4.5rem;
+      }
+    }
+  }
+}

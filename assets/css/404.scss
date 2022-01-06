@@ -1,0 +1,114 @@
+@import "./main.scss";
+.hero-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(960px / 2);
+  background: $bgColor url("/assets/images/jpg/hero-bg-404.jpg") no-repeat
+    center top;
+  background-size: cover;
+  .hero-section__description {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    h2 {
+      color: $primaryColor;
+      font-size: 5rem;
+      font-weight: bold;
+      font-style: italic;
+      font-family: "wakeling", Arial, Helvetica, sans-serif;
+    }
+    h3 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 0;
+      color: $white;
+      text-transform: uppercase;
+    }
+    .hero-section__btn {
+      margin-top: 2rem;
+      border: 1px solid $primaryColor;
+      transform: skew(-11deg);
+      color: $white;
+      background-color: transparent;
+      padding: 0.2rem 1.1rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 1.1rem;
+      font-family: "roboto" Arial, Helvetica, sans-serif;
+      position: relative;
+      z-index: 2;
+      overflow: hidden;
+      &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        width: 100%;
+        height: 100%;
+        content: "";
+        background-color: $primaryColor;
+        transition: transform 0.5s;
+        z-index: -1;
+      }
+      &:hover {
+        &::before {
+          transform: translateX(0%);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-section {
+    .hero-section__description {
+      h2 {
+        font-size: 7rem;
+      }
+      h3 {
+        font-size: 2rem;
+      }
+      .hero-section__btn {
+        border: 3px solid $primaryColor;
+        padding: 0.5rem 2rem;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-section {
+    height: calc(960px);
+    .hero-section__description {
+      h2 {
+        font-size: 10rem;
+      }
+      h3 {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .hero-section {
+    .hero-section__description {
+      .hero-section__btn {
+        padding: 0.5rem 4rem;
+        font-size: 2.25rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .container {
+    max-width: 1580px;
+  }
+}

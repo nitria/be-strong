@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documentation - Index</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Index</h1>
+      </div>
+    </header>
+    <aside>
+      <ul>
+        <li><a href="#article1">Introduction</a></li>
+        <li><a href="#article2">Installation</a></li>
+        <li><a href="#article3">Contact Form</a></li>
+        <li><a href="#article4">Gallery</a></li>
+      </ul>
+    </aside>
+    <main class="docs">
+      <div class="container">
+        <article id="article1">
+          <h1>Introduction</h1>
+          <p>Blade and Scissors is a html template. Designed with Bootstrap5 / Scss, Jquery.
+            Basic knowledge html, css, javascript is required for code editing and photoshop for image editing. 
+            Tools for editing 1. Code Editor 2. Photoshop or any other programm for image editing.
+          </p>
+          <p>Folders and files that are included:
+            <ul>
+              <li>- index.html</li>
+              <li>- home2.html</li>
+              <li>- about.html</li>
+              <li>- services.html</li>
+              <li>- gallery.html</li>
+              <li>- gallery-gap.html</li>
+              <li>- gallery-masonry.html</li>
+              <li>- contact.html</li>
+              <li>- 404.html</li>
+              <li>- .htaccess</li>
+              <li>- booking.php</li>
+              <li>- contact.php</li>
+              <li>- newsletter.php</li>
+              <li>- manifest.json</li>
+              <li>- PHPMAILER(folder)</li>
+              <li>- assets(folder)
+                <ul>
+                  <li>-- styles(folder)</li>
+                  <li>-- images(folder)
+                    <ul>
+                      <li>--- favicon(folder)</li>
+                      <li>--- gif(folder)</li>
+                      <li>--- jpg(folder)</li>
+                      <li>--- png(folder)</li>
+                      <li>--- webp(folder)</li>
+                    </ul>
+                  </li>
+                  <li>-- fonts(folder)</li>
+                  <li>-- js(folder)</li>
+                </ul>
+              </li>
+              <li>- photoshop(folder)</li>
+              <li>- documentation(folder)</li>
+            </ul>
+          </p>
+        </article>
+        <article id="article2">
+          <h1>Installation</h1>
+          <p>1. Extract the file.</p>
+          <p>2. Upload all files and folders(except photoshop folder) to server.</p>
+          <p>3. If you want the <mark style="background-color: #9f7313;color: #ffffff;padding: 0.4rem;">home2.html</mark> to be the home page rename <mark style="padding: 0.4rem;">index.html</mark> to <mark style="padding: 0.4rem;">index2.html</mark> and then rename <mark style="background-color: #9f7313;color: #ffffff;padding: 0.4rem;">home2.html</mark> to <mark style="padding: 0.4rem;">index.html</mar>.</p>
+          <p>4. The same as above for gallery.html.</p>
+        </article>
+        <article id="article3">
+          <h1>Contact Form</h1>
+          <p>In order to receive mail with the contact form / booking form / newsletter form go to the corresponding
+             php file e.g(booking.php, contact.php, newsletter.php) and if your website has an email from your hosting provider add at the line where it says
+             $mail->setFrom('enterhere@yourwebsiteemail.com') and add to $mail->addAddress('enterhere@youremail.com') an email where to forward the receiving message 
+             from your website email or else add your email to $mail->setFrom('enterhere@yourwebsiteemail.com'). Image below:</p>
+          <img src="code.jpg" alt="">
+        </article>
+        <article id="article4">
+          <h1>Gallery</h1>
+          <h2>Lighbox</h2>
+          <p>Our gallery is using the javascript lightbox effect.<br/>
+           <b>Single images.</b> Add a data-lightbox attribute to any image link to enable Lightbox. For the value of the attribute, use a unique name for each image. For example:
+<pre>
+  <code class="language-markup">
+    &lt;a href="images/image-1.jpg" data-lightbox="image-1" data-title="My caption"&gt;Image #1&lt;/a&gt;
+  </code>
+</pre>
+<i>Optional:</i><br/>
+Add a data-title attribute if you want to show a caption.<br/>
+Add a data-alt attribute if you want to set the alt attribute of the linked image.<br/>
+<b>Image sets.</b> If you have a group of related images that you would like to combine into a set, use the same data-lightbox attribute value for all of the images. For example:
+<pre><code>  &lt;a href="images/image-2.jpg" data-lightbox="roadtrip"&gt;Image #2&lt;/a&gt;</code></pre>
+<pre><code>&lt;a href="images/image-3.jpg" data-lightbox="roadtrip"&gt;Image #3&lt;/a&gt;</code></pre>
+<pre><code>&lt;a href="images/image-4.jpg" data-lightbox="roadtrip"&gt;Image #4&lt;/a&gt;</code></pre>
+          </p>
+          <h2>Masonry</h2>
+          <p>
+            For the masonry gallery, images which are horizontal add to parent div the class "span-width".
+            <img src="code-image.jpg" alt="">
+          </p>
+          <p>
+            Images which are vertical add to parent div the class "span-height"
+            <img src="code-image2.jpg" alt="">
+          </p>
+        </article>
+      </div>
+    </main>
+  </body>
+</html>

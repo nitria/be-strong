@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Fitness website template in HTML5, BOOTSTRAP5, JQUERY"
+    />
+    <meta
+      name="keywords"
+      content="HTML, CSS, JavaScript, bootstrap, gym, fitness website"
+    />
+    <meta name="author" content="nitria" />
+    <title>Blog | Be Strong</title>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com/" crossorigin />
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com/" />
+    <!--FAVICON-->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="assets/images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      href="assets/images/favicon/android-chrome-192x192.png"
+      sizes="192x192"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="assets/images/favicon/android-chrome-512x512.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="assets/images/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest.json" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet preload"
+      as="style"
+    />
+    <!-- Fontawesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Css -->
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="stylesheet" href="/assets/css/blog.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar">
+        <div class="container">
+          <a class="navbar-brand" href="/index.html"
+            ><img
+              src="./assets/images/png/logo.png"
+              alt="be strong"
+              class="header-logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Home</a
+                >
+                <span
+                  class="dropdown-toggle"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                ></span>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="home2.html">Home 2</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Home 3</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/coming-soon.html"
+                      >Coming Soon</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/404.html">404</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+                <span
+                  class="dropdown-toggle"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                ></span>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="gallery-three-column.html"
+                      >Gallery-three-column</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="gallery-masonry.html"
+                      >Gallery-masonry</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active" href="blog.html">Blog</a>
+                <span
+                  class="dropdown-toggle"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                ></span>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="blog-sidebar.html"
+                      >Blog Sidebar</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="article.html"
+                      >Single Article</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item search-container">
+                <input type="search" name="search" id="search" />
+                <label for="search"><i class="fas fa-search"></i></label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero-section">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-12 d-flex align-items-center justify-content-center flex-column"
+            >
+              <div class="hero-section__description">
+                <h2>OUR <span>BLOG</span></h2>
+                <p><a href="index.html">HOME</a> / BLOG</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="blog-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <div class="blog">
+                <div class="img">
+                  <picture>
+                    <source
+                      media="(min-width: 640px)"
+                      srcset=""
+                      type="image/"
+                    />
+                    <img
+                      src="./assets/images/jpg/blog1.jpg"
+                      alt="blog1 title"
+                      class="img-fluid"
+                    />
+                  </picture>
+                </div>
+                <div class="info">
+                  <span class="date">27 December 2021</span>
+                  <h2>BLOG1 TITLE GOES HERE</h2>
+                  <p>
+                    Be Strong goal is to help you gain the benefits of a healthy
+                    body. Our Personal Trainers will guide you on every step of
+                    your journey to get that body...
+                  </p>
+                  <a href="#" class="blog-btn">READ MORE</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="blog">
+                <div class="img">
+                  <picture>
+                    <source
+                      media="(min-width: 640px)"
+                      srcset=""
+                      type="image/"
+                    />
+                    <img
+                      src="./assets/images/jpg/blog2.jpg"
+                      alt="blog2 title"
+                      class="img-fluid"
+                    />
+                  </picture>
+                </div>
+                <div class="info">
+                  <span class="date">22 December 2021</span>
+                  <h2>BLOG2 TITLE GOES HERE</h2>
+                  <p>
+                    Be Strong goal is to help you gain the benefits of a healthy
+                    body. Our Personal Trainers will guide you on every step of
+                    your journey to get that body...
+                  </p>
+                  <a href="#" class="blog-btn">READ MORE</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <div class="blog">
+                <div class="img">
+                  <picture>
+                    <source
+                      media="(min-width: 640px)"
+                      srcset=""
+                      type="image/"
+                    />
+                    <img
+                      src="./assets/images/jpg/blog3.jpg"
+                      alt="blog3 title"
+                      class="img-fluid"
+                    />
+                  </picture>
+                </div>
+                <div class="info">
+                  <span class="date">15 NOVEMBER 2021</span>
+                  <h2>BLOG3 TITLE GOES HERE</h2>
+                  <p>
+                    Be Strong goal is to help you gain the benefits of a healthy
+                    body. Our Personal Trainers will guide you on every step of
+                    your journey to get that body...
+                  </p>
+                  <a href="#" class="blog-btn">READ MORE</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="blog">
+                <div class="img">
+                  <picture>
+                    <source
+                      media="(min-width: 640px)"
+                      srcset=""
+                      type="image/"
+                    />
+                    <img
+                      src="./assets/images/jpg/blog4.jpg"
+                      alt="blog4 title"
+                      class="img-fluid"
+                    />
+                  </picture>
+                </div>
+                <div class="info">
+                  <span class="date">08 NOVEMBER 2021</span>
+                  <h2>BLOG4 TITLE GOES HERE</h2>
+                  <p>
+                    Be Strong goal is to help you gain the benefits of a healthy
+                    body. Our Personal Trainers will guide you on every step of
+                    your journey to get that body...
+                  </p>
+                  <a href="#" class="blog-btn">READ MORE</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <div class="blog">
+                <div class="img">
+                  <picture>
+                    <source
+                      media="(min-width: 640px)"
+                      srcset=""
+                      type="image/"
+                    />
+                    <img
+                      src="./assets/images/jpg/blog5.jpg"
+                      alt="blog5 title"
+                      class="img-fluid"
+                    />
+                  </picture>
+                </div>
+                <div class="info">
+                  <span class="date">18 OCTOBER 2021</span>
+                  <h2>BLOG5 TITLE GOES HERE</h2>
+                  <p>
+                    Be Strong goal is to help you gain the benefits of a healthy
+                    body. Our Personal Trainers will guide you on every step of
+                    your journey to get that body...
+                  </p>
+                  <a href="#" class="blog-btn">READ MORE</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="blog">
+                <div class="img">
+                  <picture>
+                    <source
+                      media="(min-width: 640px)"
+                      srcset=""
+                      type="image/"
+                    />
+                    <img
+                      src="./assets/images/jpg/blog6.jpg"
+                      alt="blog6 title"
+                      class="img-fluid"
+                    />
+                  </picture>
+                </div>
+                <div class="info">
+                  <span class="date">09 OCTOBER 2021</span>
+                  <h2>BLOG6 TITLE GOES HERE</h2>
+                  <p>
+                    Be Strong goal is to help you gain the benefits of a healthy
+                    body. Our Personal Trainers will guide you on every step of
+                    your journey to get that body...
+                  </p>
+                  <a href="#" class="blog-btn">READ MORE</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <nav aria-label="Page navigation example">
+              <ul class="pagination justify-content-end">
+                <li class="page-item disabled">
+                  <a
+                    class="page-link"
+                    href="#"
+                    tabindex="-1"
+                    aria-disabled="true"
+                    >Previous</a
+                  >
+                </li>
+                <li class="page-item">
+                  <a class="page-link blog-btn" href="#">1</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">3</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Next</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row top">
+          <div class="col-12 col-md-6 col-xl-3 col1">
+            <div class="logo-container">
+              <picture>
+                <source media="(min-width: 640px)" srcset="" type="image/" />
+                <img src="./assets/images/png/logo.png" alt="be strong" />
+              </picture>
+            </div>
+            <div class="info">
+              <p>
+                Theres all this spanish text on my site give us a complimentary
+                logo along with the website.
+              </p>
+            </div>
+            <div class="social-btns">
+              <h3>Follow us</h3>
+              <ul>
+                <li>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-3 col2">
+            <header>
+              <h3>OPENING <span>HOURS</span></h3>
+            </header>
+            <ul>
+              <li>Monday - Friday 8am - 10pm</li>
+              <li>Saturday 8am - 10pm</li>
+              <li>Sunday 10am - 10pm</li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 col-xl-3 col3">
+            <header>
+              <h3>USEFUL <span>LINKS</span></h3>
+            </header>
+            <ul>
+              <li><a href="blog.html">BLOG</a></li>
+              <li><a href="about.html#classes">CLASSES</a></li>
+              <li><a href="gallery.html">GALLERY</a></li>
+              <li><a href="about.html#trainers">TRAINERS</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 col-xl-3 col4">
+            <header>
+              <h3>FIND <span>US</span></h3>
+            </header>
+            <ul>
+              <li><i class="fas fa-phone"></i> 12345678</li>
+              <li><i class="fas fa-envelope"></i> myemail@yahoo.com</li>
+              <li><i class="fas fa-map-marker-alt"></i> 24 Cool st, NY USA</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row bottom">
+          <div class="col-12 copyright">
+            <p>
+              Copyright &copy; <span class="year"></span>. ALL RIGHTS RESERVED
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="back-to-top">
+      <i class="fas fa-chevron-up"></i>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      async
+    ></script>
+    <script src="./assets/javascript/index.js"></script>
+  </body>
+</html>

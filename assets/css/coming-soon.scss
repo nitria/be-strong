@@ -1,0 +1,68 @@
+@import "./main.scss";
+
+.countdown-section {
+  background-color: $black;
+  .countdown-section__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url("../images/png/coming-soon-bg.png") no-repeat center center;
+    h2 {
+      color: $white;
+      font-style: italic;
+      font-weight: bold;
+      span {
+        color: $primaryColor;
+      }
+    }
+    .countdown-section__counter {
+      display: flex;
+      flex-direction: row;
+      .countdown-section__countdown-time {
+        margin: 2rem 1rem;
+        span {
+          color: $primaryColor;
+          background-color: rgba($black, $alpha: 0.8);
+          font-size: 1.5rem;
+          font-weight: bold;
+          padding: 1rem 0.8rem;
+        }
+        p {
+          margin-top: 2rem;
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .countdown-section {
+    .countdown-section__container {
+      h2 {
+        font-size: 4rem;
+      }
+      .countdown-section__counter {
+        margin: 3rem 0;
+        .countdown-section__countdown-time {
+          margin: 0 2rem;
+          span {
+            font-size: 4rem;
+            padding: 1rem;
+          }
+          p {
+            font-size: 1.5rem;
+            margin-top: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1920px) {
+  .container {
+    max-width: 1580px;
+  }
+}

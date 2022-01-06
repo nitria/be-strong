@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Fitness website template in HTML5, BOOTSTRAP5, JQUERY"
+    />
+    <meta
+      name="keywords"
+      content="HTML, CSS, JavaScript, bootstrap, gym, fitness website"
+    />
+    <meta name="author" content="nitria" />
+    <title>About | Be strong</title>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com/" crossorigin />
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com/" />
+    <!--FAVICON-->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="assets/images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      href="assets/images/favicon/android-chrome-192x192.png"
+      sizes="192x192"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="assets/images/favicon/android-chrome-512x512.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="assets/images/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest.json" />
+    <!-- AOS -->
+    <link rel="stylesheet preload" href="./assets/css/aos.css" as="style" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet preload"
+      as="style"
+    />
+    <!-- Fontawesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Css -->
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="stylesheet" href="/assets/css/about.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar">
+        <div class="container">
+          <a class="navbar-brand" href="/index.html"
+            ><img
+              src="./assets/images/png/logo.png"
+              alt="be strong"
+              class="header-logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Home</a
+                >
+                <span
+                  class="dropdown-toggle"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                ></span>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="home2.html">Home 2</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Home 3</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/coming-soon.html">Coming Soon</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/404.html">404</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="about.html">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+                <span
+                  class="dropdown-toggle"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                ></span>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="gallery-three-column.html"
+                      >Gallery-three-column</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="gallery-masonry.html"
+                      >Gallery-masonry</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="blog.html">Blog</a>
+                <span
+                  class="dropdown-toggle"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                ></span>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="blog-sidebar.html"
+                      >Blog Sidebar</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="article.html"
+                      >Single Article</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item search-container">
+                <input type="search" name="search" id="search" />
+                <label for="search"><i class="fas fa-search"></i></label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero-section">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="hero-section__description">
+                <h2>ABOUT <span>US</span></h2>
+                <p><a href="index.html">HOME</a> / ABOUT US</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about-us-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <h2>
+                ABOUT <span> Be <em>Strong</em></span>
+              </h2>
+              <p>
+                Be Strong goal is to help you gain the benefits of a healthy
+                body. Our Personal Trainers will guide you on every step of your
+                journey to get that body you desire.
+              </p>
+              <p>
+                Started as a local gym in Xanthi, Greece and after 40 years and
+                20 gym’s in Greece we are growing and expanding our gym’s to 10
+                locations around the world becoming No1 choice.
+              </p>
+            </div>
+            <div class="col-12 col-md-6" data-aos="fade-left">
+              <picture>
+                <source media="(min-width: 640)" srcset="" type="image/" />
+                <img
+                  src="./assets/images/webp/CENTRAL-ELEMENT.webp"
+                  alt="about us"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="numbers-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-3 text-center">
+              <div class="icon">
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="info">
+                <h2 class="counter" data-target="5000">0</h2>
+                <h3>members</h3>
+              </div>
+            </div>
+            <div class="col-12 col-lg-3 text-center">
+              <div class="icon">
+                <i class="fas fa-award"></i>
+              </div>
+              <div class="info">
+                <h2 class="counter" data-target="27">0</h2>
+                <h3>rewards</h3>
+              </div>
+            </div>
+            <div class="col-12 col-lg-3 text-center">
+              <div class="icon">
+                <i class="fas fa-building"></i>
+              </div>
+              <div class="info">
+                <h2 class="counter" data-target="30">0</h2>
+                <h3>facilities</h3>
+              </div>
+            </div>
+            <div class="col-12 col-lg-3 text-center">
+              <div class="icon">
+                <i class="fas fa-running"></i>
+              </div>
+              <div class="info">
+                <h2 class="counter" data-target="100">0</h2>
+                <h3>instructors</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container find-us-section">
+        <div class="row">
+          <div class="col">
+            <header data-aos="fade-up">
+              <h2>where to <span>find us</span></h2>
+              <p>
+                We are located in over 10 different countries and 50 different
+                cities. Have a look below we might be in your location.
+              </p>
+            </header>
+            <div class="locations">
+              <ul class="tab-titles">
+                <li class="tab-title active" data-list="europe">EUROPE</li>
+                <li class="tab-title" data-list="asia">ASIA</li>
+                <li class="tab-title" data-list="america">AMERICA</li>
+                <li class="tab-title" data-list="australia">AUSTRALIA</li>
+              </ul>
+              <div class="countries">
+                <div id="europe" class="tab active">
+                  <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                      <h3>GREECE</h3>
+                      <ul>
+                        <li>address</li>
+                        <li>address</li>
+                        <li>address</li>
+                      </ul>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                      <h3>ITALY</h3>
+                      <ul>
+                        <li>address</li>
+                        <li>address</li>
+                        <li>address</li>
+                      </ul>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                      <h3>GERMANY</h3>
+                      <ul>
+                        <li>address</li>
+                        <li>address</li>
+                        <li>address</li>
+                      </ul>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                      <h3>SPAIN</h3>
+                      <ul>
+                        <li>address</li>
+                        <li>address</li>
+                        <li>address</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div id="asia" class="tab">
+                  <div class="row">
+                    <div class="col-12 col-lg-3">
+                      <h3>CHINA</h3>
+                      <ul>
+                        <li>address</li>
+                        <li>address</li>
+                        <li>address</li>
+                      </ul>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                      <h3>THAILAND</h3>
+                      <ul>
+                        <li>address</li>
+                        <li>address</li>
+                        <li>address</li>
+                      </ul>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                      <h3>INDIA</h3>
+                      <ul>
+                        <li>address</li>
+                        <li>address</li>
+                        <li>address</li>
+                      </ul>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                      <h3>ISRAEL</h3>
+                      <ul>
+                        <li>address</li>
+                        <li>address</li>
+                        <li>address</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div id="america" class="tab">
+                  <div class="row">
+                    <div class="col-12 col-lg-3">
+                      <h3>CANADA</h3>
+                      <ul>
+                        <li>address</li>
+                        <li>address</li>
+                        <li>address</li>
+                      </ul>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                      <h3>USA</h3>
+                      <ul>
+                        <li>address</li>
+                        <li>address</li>
+                        <li>address</li>
+                      </ul>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                      <h3>BRAZIL</h3>
+                      <ul>
+                        <li>address</li>
+                        <li>address</li>
+                        <li>address</li>
+                      </ul>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                      <h3>MEXICO</h3>
+                      <ul>
+                        <li>address</li>
+                        <li>address</li>
+                        <li>address</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div id="australia" class="tab">
+                  <div class="row">
+                    <div class="col-12 col-lg-3">
+                      <h3>Melbourne</h3>
+                      <ul>
+                        <li>address</li>
+                        <li>address</li>
+                        <li>address</li>
+                      </ul>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                      <h3>Sydney</h3>
+                      <ul>
+                        <li>address</li>
+                        <li>address</li>
+                        <li>address</li>
+                      </ul>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                      <h3>Perth</h3>
+                      <ul>
+                        <li>address</li>
+                        <li>address</li>
+                        <li>address</li>
+                      </ul>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                      <h3>Canberra</h3>
+                      <ul>
+                        <li>address</li>
+                        <li>address</li>
+                        <li>address</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="trainers-section" id="trainers">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <header data-aos="fade-up">
+                <h2>OUR AWESOME <span>TRAINERS</span></h2>
+                <p>Get to know our awesome Trainers. With many years of eperience they will help you with your transformation.</p>
+              </header>
+              <div class="trainers">
+                <div class="row" data-aos="fade-up">
+                  <div class="col-12 col-lg-3 p-0">
+                    <div class="trainer">
+                      <div class="image">
+                        <picture>
+                          <source media="(min-width: 640px)" srcset="" type="image/">
+                          <img src="./assets/images/webp/trainer1.webp" alt="helen rose">
+                        </picture>
+                      </div>
+                      <div class="info">
+                        <h3>Helen Rose</h3>
+                        <h4>Fitness Coatch</h4>
+                        <div class="social">
+                          <ul>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-3 p-0">
+                    <div class="trainer">
+                      <div class="image">
+                        <picture>
+                          <source media="(min-width: 640px)" srcset="" type="image/">
+                          <img src="./assets/images/webp/trainer2.webp" alt="john doe">
+                        </picture>
+                      </div>
+                      <div class="info">
+                        <h3>John Doe</h3>
+                        <h4>Fitness Coatch</h4>
+                        <div class="social">
+                          <ul>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-3 p-0">
+                    <div class="trainer">
+                      <div class="image">
+                        <picture>
+                          <source media="(min-width: 640px)" srcset="" type="image/">
+                          <img src="./assets/images/webp/trainer3.webp" alt="bruce pain">
+                        </picture>
+                      </div>
+                      <div class="info">
+                        <h3>Bruce Pain</h3>
+                        <h4>Crossfit Coatch</h4>
+                        <div class="social">
+                          <ul>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-3 p-0">
+                    <div class="trainer">
+                      <div class="image">
+                        <picture>
+                          <source media="(min-width: 640px)" srcset="" type="image/">
+                          <img src="./assets/images/webp/trainer4.webp" alt="sarah conor">
+                        </picture>
+                      </div>
+                      <div class="info">
+                        <h3>Sarah Conor</h3>
+                        <h4>Personal Trainer</h4>
+                        <div class="social">
+                          <ul>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" data-aos="fade-up" data-aos-delay="800">
+                  <div class="col-12 col-lg-3 p-0">
+                    <div class="trainer">
+                      <div class="image">
+                        <picture>
+                          <source media="(min-width: 640px)" srcset="" type="image/">
+                          <img src="./assets/images/webp/trainer5.webp" alt="vicky pappas">
+                        </picture>
+                      </div>
+                      <div class="info">
+                        <h3>Vicky Pappas</h3>
+                        <h4>Personal Trainer</h4>
+                        <div class="social">
+                          <ul>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-3 p-0">
+                    <div class="trainer">
+                      <div class="image">
+                        <picture>
+                          <source media="(min-width: 640px)" srcset="" type="image/">
+                          <img src="./assets/images/webp/trainer6.webp" alt="diane miles">
+                        </picture>
+                      </div>
+                      <div class="info">
+                        <h3>Diane Miles</h3>
+                        <h4>Yoga Coatch</h4>
+                        <div class="social">
+                          <ul>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-3 p-0">
+                    <div class="trainer">
+                      <div class="image">
+                        <picture>
+                          <source media="(min-width: 640px)" srcset="" type="image/">
+                          <img src="./assets/images/webp/trainer7.webp" alt="michael myers">
+                        </picture>
+                      </div>
+                      <div class="info">
+                        <h3>Michael Myers</h3>
+                        <h4>Crossfit Coatch</h4>
+                        <div class="social">
+                          <ul>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-3 p-0">
+                    <div class="trainer">
+                      <div class="image">
+                        <picture>
+                          <source media="(min-width: 640px)" srcset="" type="image/">
+                          <img src="./assets/images/webp/trainer8.webp" alt="monica aniston">
+                        </picture>
+                      </div>
+                      <div class="info">
+                        <h3>Monica Aniston</h3>
+                        <h4>Yoga Coatch</h4>
+                        <div class="social">
+                          <ul>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+      </section>
+      <section class="classes-section" id="classes">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <header>
+                <h2>OUR <span>CLASSES</span></h2>
+                <p>Our gym has a variety of classes that suits every need, aerobic, bodybuilding, yoga, martial arts, crossfit...</p>
+              </header>
+              <div class="classes">
+                <div class="row">
+                  <div class="col-12 col-md-6 col-xxl-3 p-0" data-aos="flip-right" data-aos-duration="600" data-aos-delay="500">
+                    <div class="class">
+                      <div class="image">
+                        <picture>
+                          <source media="(min-width: 640px)" srcset="" type="image/">
+                          <img src="./assets/images/webp/trx.webp" alt="trx">
+                        </picture>
+                      </div>
+                      <div class="info">
+                        <h3>TRX</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-xxl-3 p-0" data-aos="flip-right" data-aos-duration="600" data-aos-delay="800">
+                    <div class="class">
+                      <div class="image">
+                        <picture>
+                          <source media="(min-width: 640px)" srcset="" type="image/">
+                          <img src="./assets/images/webp/aerobic.webp" alt="aerobic">
+                        </picture>
+                      </div>
+                      <div class="info">
+                        <h3>AEROBIC</h3>  
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-xxl-3 p-0" data-aos="flip-right" data-aos-duration="600" data-aos-delay="1100">
+                    <div class="class">
+                      <div class="image">
+                        <picture>
+                          <source media="(min-width: 640px)" srcset="" type="image/">
+                          <img src="./assets/images/webp/crossfit.webp" alt="crossfit">
+                        </picture>
+                      </div>
+                      <div class="info">
+                        <h3>CROSSFIT</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-xxl-3 p-0" data-aos="flip-right" data-aos-duration="600" data-aos-delay="1400">
+                    <div class="class">
+                      <div class="image">
+                        <picture>
+                          <source media="(min-width: 640px)" srcset="" type="image/">
+                          <img src="./assets/images/webp/yoga.webp" alt="yoga">
+                        </picture>
+                      </div>
+                      <div class="info">
+                        <h3>YOGA</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-md-6 col-xxl-3 p-0" data-aos="flip-right" data-aos-duration="600" data-aos-delay="1700">
+                    <div class="class">
+                      <div class="image">
+                        <picture>
+                          <source media="(min-width: 640px)" srcset="" type="image/">
+                          <img src="./assets/images/webp/weight.webp" alt="weight">
+                        </picture>
+                      </div>
+                      <div class="info">
+                        <h3>WEIGHT</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-xxl-3 p-0" data-aos="flip-right" data-aos-duration="600" data-aos-delay="2000">
+                    <div class="class">
+                      <div class="image">
+                        <picture>
+                          <source media="(min-width: 640px)" srcset="" type="image/">
+                          <img src="./assets/images/webp/zumba.webp" alt="zumba">
+                        </picture>
+                      </div>
+                      <div class="info">
+                        <h3>ZUMBA</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-xxl-3 p-0" data-aos="flip-right" data-aos-duration="600" data-aos-delay="2300">
+                    <div class="class">
+                      <div class="image">
+                        <picture>
+                          <source media="(min-width: 640px)" srcset="" type="image/">
+                          <img src="./assets/images/webp/bodybuilding.webp" alt="bodybuilding">
+                        </picture>
+                      </div>
+                      <div class="info">
+                        <h3>BODYBUILDING</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-xxl-3 p-0" data-aos="flip-right" data-aos-duration="600" data-aos-delay="2600">
+                    <div class="class">
+                      <div class="image">
+                        <picture>
+                          <source media="(min-width: 640px)" srcset="" type="image/">
+                          <img src="./assets/images/webp/kickboxing.webp" alt="kickboxing">
+                        </picture>
+                      </div>
+                      <div class="info">
+                        <h3>KICKBOXING</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row top">
+          <div class="col-12 col-md-6 col-xl-3 col1">
+            <div class="logo-container">
+              <picture>
+                <source media="(min-width: 640px)" srcset="" type="image/" />
+                <img src="./assets/images/png/logo.png" alt="be strong" />
+              </picture>
+            </div>
+            <div class="info">
+              <p>
+                Theres all this spanish text on my site give us a complimentary
+                logo along with the website.
+              </p>
+            </div>
+            <div class="social-btns">
+              <h3>Follow us</h3>
+              <ul>
+                <li>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-3 col2">
+            <header>
+              <h3>OPENING <span>HOURS</span></h3>
+            </header>
+            <ul>
+              <li>Monday - Friday 8am - 10pm</li>
+              <li>Saturday 8am - 10pm</li>
+              <li>Sunday 10am - 10pm</li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 col-xl-3 col3">
+            <header>
+              <h3>USEFUL <span>LINKS</span></h3>
+            </header>
+            <ul>
+              <li><a href="blog.html">BLOG</a></li>
+              <li><a href="about.html#classes">CLASSES</a></li>
+              <li><a href="gallery.html">GALLERY</a></li>
+              <li><a href="about.html#trainers">TRAINERS</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 col-xl-3 col4">
+            <header>
+              <h3>FIND <span>US</span></h3>
+            </header>
+            <ul>
+              <li><i class="fas fa-phone"></i> 12345678</li>
+              <li><i class="fas fa-envelope"></i> myemail@yahoo.com</li>
+              <li><i class="fas fa-map-marker-alt"></i> 24 Cool st, NY USA</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row bottom">
+          <div class="col-12 copyright">
+            <p>
+              Copyright &copy; <span class="year"></span>. ALL RIGHTS RESERVED
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="back-to-top">
+      <i class="fas fa-chevron-up"></i>
+    </div>
+    <script src="./assets/javascript/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      async
+    ></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./assets/javascript/index.js"></script>
+  </body>
+</html>

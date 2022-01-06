@@ -1,0 +1,397 @@
+@import "./main.scss";
+
+.hero-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: calc(734px / 2);
+  background: $bgColor url("/assets/images/jpg/hero-bg-contact.jpg") no-repeat
+    center top;
+  background-size: cover;
+  .container {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    .hero-section__description {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+
+      h2 {
+        color: $white;
+        font-size: 1.2rem;
+        font-weight: bold;
+        font-style: italic;
+        font-family: "roboto" Arial, Helvetica, sans-serif;
+        margin-bottom: 40px;
+        span {
+          color: $primaryColor;
+        }
+      }
+      p {
+        font-size: 0.8rem;
+        margin: 0;
+        color: $white;
+        a {
+          font-weight: 800;
+          color: $white;
+          text-decoration: none;
+          &:hover {
+            color: $primaryColor;
+          }
+        }
+      }
+    }
+  }
+}
+.contact-info-section {
+  padding: 50px 0;
+  background: #ffffff url("../images/png/alluraCity.png") no-repeat center;
+  background-size: 1000px 590px;
+  header {
+    max-width: 350px;
+    width: 100%;
+    margin: 0 auto;
+    h2 {
+      font-family: "roboto", Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: $black;
+      line-height: 50px;
+      position: relative;
+      width: -webkit-max-content;
+      width: -moz-max-content;
+      width: max-content;
+      margin: 0 auto 20px;
+      text-transform: uppercase;
+      span {
+        color: $primaryColor;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: -10px;
+        transform: translate(-50%);
+        width: 50%;
+        height: 3px;
+        background-color: $primaryColor;
+      }
+    }
+  }
+
+  .contact-info-section__list {
+    padding: 0;
+    list-style: none;
+    max-width: 350px;
+    width: 100%;
+    margin: 3rem auto;
+    li {
+      padding: 0.5rem 0;
+      i {
+        color: $primaryColor;
+        margin-right: 1rem;
+      }
+      display: flex;
+      align-items: flex-start;
+      ul {
+        list-style: none;
+        padding: 0;
+        li {
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+.contact-form-section {
+  background: rgba($color: #100f0f, $alpha: 0.9)
+    url("../images/jpg/google-maps.jpg") no-repeat center;
+  background-size: cover;
+  .contact-form-section__column {
+    padding: 50px 0;
+    background: $bgColor;
+  }
+  header {
+    max-width: 300px;
+    width: 100%;
+    margin: auto;
+    h2 {
+      font-family: "roboto", Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: $white;
+      line-height: 50px;
+      position: relative;
+      width: -webkit-max-content;
+      width: -moz-max-content;
+      width: max-content;
+      margin: 0 auto 20px;
+      span {
+        color: $primaryColor;
+      }
+    }
+  }
+  .contact-form {
+    max-width: 300px;
+    width: 100%;
+    margin: auto;
+    margin-top: 3rem;
+    input,
+    textarea,
+    button {
+      width: 100%;
+      margin: 0.5rem 0;
+      padding: 0.3rem 0.5rem;
+      background: transparent;
+      border: 2px solid #c4c4c4;
+      color: #c4c4c4;
+    }
+    .btn-send {
+      position: relative;
+      overflow: hidden;
+      z-index: 2;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: $white;
+      &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        width: 100%;
+        height: 100%;
+        content: "";
+        background-color: $primaryColor;
+        transition: transform 0.5s;
+        z-index: -1;
+      }
+      &:hover {
+        &::before {
+          transform: translateX(0%);
+        }
+      }
+    }
+  }
+}
+.find-us-section {
+  padding: 50px 0;
+  h2 {
+    font-family: "roboto", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: $black;
+    line-height: 50px;
+    position: relative;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin: 0 auto 20px;
+    text-transform: uppercase;
+    span {
+      color: $primaryColor;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -20px;
+      transform: translate(-50%);
+      width: 50%;
+      height: 3px;
+      background-color: $primaryColor;
+    }
+  }
+  p {
+    max-width: 594px;
+    width: 100%;
+    font-size: 1.25rem;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .locations {
+    .tab-titles {
+      margin: 0;
+      padding-left: 0;
+      display: flex;
+      justify-content: space-between;
+      .tab-title {
+        position: relative;
+        display: inline-block;
+        font-weight: bold;
+        padding: 0.3rem;
+        cursor: pointer;
+
+        &.active {
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
+          background-color: rgba($color: #e5e5e5, $alpha: 0.5);
+        }
+      }
+    }
+    .countries {
+      padding: 2rem 1rem;
+      background-color: rgba($color: #e5e5e5, $alpha: 0.5);
+      h3 {
+        font-weight: bold;
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+      }
+      ul {
+        padding: 0;
+        list-style: none;
+        li {
+          text-transform: uppercase;
+        }
+      }
+      .tab {
+        display: none;
+        &.active {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-section {
+    .container {
+      .hero-section__description {
+        h2 {
+          font-size: 3rem;
+          margin-bottom: 80px;
+        }
+        p {
+          font-size: 1.25rem;
+        }
+      }
+    }
+  }
+  .contact-info-section {
+    padding: 140px 0;
+    header {
+      h2 {
+        font-size: 2.5rem;
+      }
+    }
+    .contact-info-section__list {
+      li {
+        font-size: 1.5rem;
+        padding: 1rem 0;
+      }
+    }
+  }
+  .find-us-section {
+    padding: 140px 0;
+    h2 {
+      font-size: 2.3rem;
+      &::after {
+        height: 5px;
+      }
+    }
+    p {
+      font-size: 1.6rem;
+      margin: 3rem auto 5rem;
+    }
+    .locations {
+      .tab-titles {
+        padding-left: 0;
+        display: flex;
+        justify-content: space-between;
+        .tab-title {
+          padding: 1rem 1rem 2rem;
+          font-size: 1.5rem;
+          line-height: 1.5rem;
+          &::before {
+            display: inline-block;
+            padding-right: 0.4rem;
+            vertical-align: middle;
+            color: $primaryColor;
+            content: "\f45c";
+            font-weight: 900;
+            font-family: "Font Awesome 5 Free";
+            font-size: 0.5rem;
+          }
+        }
+      }
+      .countries {
+        h3 {
+          font-size: 1.25rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 992px) {
+  .contact-info-section {
+    header {
+      h2 {
+        margin: 0;
+      }
+    }
+    .contact-info-section__list {
+      li {
+        font-size: 1.3rem;
+        i {
+          font-size: 2.5rem;
+          margin-right: 1.5rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-section {
+    height: calc(734px);
+    .container {
+      .hero-section__description {
+        h2 {
+          font-size: 4rem;
+          margin-bottom: 200px;
+        }
+        p {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+  .contact-form-section {
+    .contact-form-section__column {
+      -webkit-clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+      clip-path: polygon(0 0, 100% 0%, 100% 100%, 10% 100%);
+    }
+    header {
+      h2 {
+        font-size: 2.3rem;
+        margin: 0;
+      }
+    }
+  }
+  .find-us-section {
+    .locations {
+      .countries {
+        padding: 3rem 2rem 5rem;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1920px) {
+  .container {
+    max-width: 1580px;
+  }
+  .hero-section {
+    .container {
+      .hero-section__description {
+        margin-bottom: 4.5rem;
+      }
+    }
+  }
+}

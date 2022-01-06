@@ -495,7 +495,7 @@ footer .copyright p {
       -ms-flex-pack: center;
           justify-content: center;
   height: calc(960px / 2);
-  background: rgba(16, 15, 15, 0.95) url("./assets/images/webp/hero-bg-home.webp") no-repeat center top;
+  background: rgba(16, 15, 15, 0.95) url("../assets/images/webp/hero-bg-home.webp") no-repeat center top;
   background-size: cover;
 }
 

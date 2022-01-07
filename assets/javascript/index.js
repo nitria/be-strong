@@ -1,27 +1,15 @@
-//Toggle background color and size of header/ toggle logo size on scroll
-var windowWidth = window.innerWidth;
-if (windowWidth >= 992) {
-  $("header").addClass("lg-screen");
-  windowOnScroll();
-} else {
-  $("header").removeClass("lg-screen");
-  windowOnScroll();
-}
-
-function windowOnScroll() {
-  $(window).on("scroll", () => {
-    var windowHeight = window.scrollY;
-    if (windowHeight > 300) {
-      $("header").removeClass("lg-screen");
-      $(".logo-img").css({ maxWidth: "40px" });
-      $(".navbar-collapse").css({ padding: "0px" });
+//Search Bar//
+$("#search").keypress((e) => {
+  if (e.which === 13) {
+    var value = $("#search").val().toLowerCase();
+    console.log(value);
+    if ($("#search").val() === "") {
+      return;
     } else {
-      $("header").addClass("lg-screen");
-      $(".logo-img").css({ maxWidth: "60px" });
-      $(".navbar-collapse").css({ padding: "initial" });
+      $("body").offset().top;
     }
-  });
-}
+  }
+});
 
 //Open/Close menu and animate bars for small devices
 $(".bars").on("click", () => {

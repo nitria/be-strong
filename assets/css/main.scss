@@ -69,6 +69,7 @@ header {
       background-color: $bgColor;
       transition: 0.3s ease;
       flex-grow: 0;
+      z-index: 5;
       .navbar-nav {
         border-top: 1px solid $white;
         border-bottom: 1px solid $white;
@@ -78,6 +79,7 @@ header {
         justify-content: center;
         padding-left: 1rem;
         padding-right: 1rem;
+
         .nav-item {
           width: 100%;
           margin-right: 0.5rem;
@@ -100,11 +102,12 @@ header {
             justify-content: flex-start;
             overflow: hidden;
             input[type="search"] {
-              padding-left: 0.5rem;
+              padding: 0.25rem 0.5rem;
               border-radius: 10px;
               border: 1px solid rgba($primaryColor, 0.6);
               background-color: transparent;
               color: $white;
+              font-size: 0.8rem;
               transition: 0.3s;
             }
             .fas {

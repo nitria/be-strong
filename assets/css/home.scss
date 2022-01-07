@@ -5,8 +5,8 @@
   align-items: center;
   justify-content: center;
   height: calc(960px / 2);
-  background: $bgColor url("../../assets/images/webp/hero-bg-home.webp") no-repeat
-    center top;
+  background: $bgColor url("../../assets/images/webp/hero-bg-home.webp")
+    no-repeat center top;
   background-size: cover;
   &::after {
     content: "";
@@ -147,7 +147,6 @@
     font-size: 1rem;
     font-family: "roboto" Arial, Helvetica, sans-serif;
     position: relative;
-    z-index: 2;
     overflow: hidden;
     text-decoration: none;
     display: block;

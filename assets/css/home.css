@@ -775,8 +775,8 @@ footer .copyright p {
           transition-delay: 0.5s, 0s, 0.5s, 0.5s, 0.5s;
 }
 
-.trainers-section .trainers-section__trainersbox .trainers-section__trainer .backgroundColor h4,
-.trainers-section .trainers-section__trainersbox .trainers-section__trainer .backgroundColor h5 {
+.trainers-section .trainers-section__trainersbox .trainers-section__trainer .backgroundColor h3,
+.trainers-section .trainers-section__trainersbox .trainers-section__trainer .backgroundColor h4 {
   color: #ffffff;
   font-weight: 600;
   text-shadow: 1px 1px 5px rgba(16, 15, 15, 0.95);
@@ -787,7 +787,7 @@ footer .copyright p {
           transition-delay: 0.5s;
 }
 
-.trainers-section .trainers-section__trainersbox .trainers-section__trainer .backgroundColor h5 {
+.trainers-section .trainers-section__trainersbox .trainers-section__trainer .backgroundColor h4 {
   font-size: 1rem;
   font-weight: 300;
 }

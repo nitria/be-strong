@@ -86,6 +86,7 @@ header .navbar .navbar-collapse {
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
+  z-index: 5;
 }
 
 header .navbar .navbar-collapse .navbar-nav {
@@ -139,11 +140,12 @@ header .navbar .navbar-collapse .navbar-nav .nav-item.search-container {
 }
 
 header .navbar .navbar-collapse .navbar-nav .nav-item.search-container input[type="search"] {
-  padding-left: 0.5rem;
+  padding: 0.25rem 0.5rem;
   border-radius: 10px;
   border: 1px solid rgba(255, 0, 0, 0.6);
   background-color: transparent;
   color: #ffffff;
+  font-size: 0.8rem;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }

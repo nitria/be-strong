@@ -2,16 +2,19 @@
 @font-face {
   font-family: wakeling;
   src: url("../fonts/wakeling.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: roboto;
   src: url("../fonts/Roboto-Regular.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: robotoBlack;
   src: url("../fonts/Roboto-Black.ttf");
+  font-display: swap;
 }
 
 * {
@@ -211,7 +214,7 @@ body main {
 
 footer {
   position: relative;
-  background: rgba(16, 15, 15, 0.95) url("../images/png/luis-vidal-FodEsaNZs48-unsplash 2.png") no-repeat center;
+  background: rgba(16, 15, 15, 0.95) url("../images/webp/footer-bg.webp") no-repeat center;
 }
 
 footer:after {
@@ -249,7 +252,7 @@ footer .col1 {
 }
 
 footer .col1 .logo-container {
-  max-width: 244px;
+  max-width: 120px;
   width: 100%;
 }
 

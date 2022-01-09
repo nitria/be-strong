@@ -79,7 +79,8 @@
     <!-- Fontawesome -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-      rel="stylesheet"
+      rel="stylesheet preload"
+      as="style"
     />
     <!-- Css -->
     <link rel="stylesheet" href="./assets/css/main.css" />
@@ -98,6 +99,8 @@
               src="./assets/images/png/logo.png"
               alt="be strong"
               class="header-logo"
+              width="120"
+              height="40"
           /></a>
           <button
             class="navbar-toggler"
@@ -295,19 +298,47 @@
               </p>
               <div class="row classes-section__row" data-aos="fade-up">
                 <div class="col-12 col-md-3 class">
-                  <img src="./assets/images/png/trx.png" alt="" />
+                  <picture>
+                    <img
+                      src="./assets/images/webp/trx-icon.webp"
+                      alt="trx icon"
+                      width="100"
+                      height="100"
+                    />
+                  </picture>
                   <h3>TRX</h3>
                 </div>
                 <div class="col-12 col-md-3 class">
-                  <img src="./assets/images/png/aerobic-icon.png" alt="" />
+                  <picture>
+                    <img
+                      src="./assets/images/webp/aerobic-icon.webp"
+                      alt="aerobic icon"
+                      width="100"
+                      height="100"
+                    />
+                  </picture>
                   <h3>AEROBIC</h3>
                 </div>
                 <div class="col-12 col-md-3 class">
-                  <img src="./assets/images/png/crossfit.png" alt="" />
+                  <picture>
+                    <img
+                      src="./assets/images/webp/crossfit-icon.webp"
+                      alt="crossfit icon"
+                      width="100"
+                      height="100"
+                    />
+                  </picture>
                   <h3>CROSSFIT</h3>
                 </div>
                 <div class="col-12 col-md-3 class">
-                  <img src="./assets/images/png/weights.png" alt="" />
+                  <picture>
+                    <img
+                      src="./assets/images/webp/weights-icon.webp"
+                      alt="weights icon"
+                      width="100"
+                      height="100"
+                    />
+                  </picture>
                   <h3>WEIGHTS</h3>
                 </div>
               </div>
@@ -371,10 +402,15 @@
                         </li>
                       </ul>
                     </div>
-                    <img
-                      src="./assets/images/webp/image-trainer1.webp"
-                      alt="Jennifer Aniston"
-                    />
+                    <picture>
+                      <img
+                        src="./assets/images/webp/image-trainer1.webp"
+                        alt="Jennifer Aniston"
+                        class="img-fluid"
+                        width="200"
+                        height="260"
+                      />
+                    </picture>
                   </div>
                 </div>
                 <div
@@ -406,10 +442,15 @@
                         </li>
                       </ul>
                     </div>
-                    <img
-                      src="./assets/images/webp/image-trainer2.webp"
-                      alt="Michael Bay"
-                    />
+                    <picture>
+                      <img
+                        src="./assets/images/webp/image-trainer2.webp"
+                        alt="Michael Bay"
+                        class="img-fluid"
+                        width="200"
+                        height="260"
+                      />
+                    </picture>
                   </div>
                 </div>
                 <div
@@ -442,10 +483,15 @@
                         </li>
                       </ul>
                     </div>
-                    <img
-                      src="./assets/images/webp/image-trainer3.webp"
-                      alt="Jack Sparrow"
-                    />
+                    <picture>
+                      <img
+                        src="./assets/images/webp/image-trainer3.webp"
+                        alt="Jack Sparrow"
+                        class="img-fluid"
+                        width="200"
+                        height="260"
+                      />
+                    </picture>
                   </div>
                 </div>
               </div>
@@ -458,11 +504,22 @@
         <div class="row">
           <div class="col-12 col-xxl-7 left_col">
             <picture>
-              <source media="(min-width: 640px)" srcset="" type="image/png" />
+              <source
+                media="(min-width: 640px)"
+                srcset="./assets/images/webp/weightlifting.webp"
+                type="image/webp"
+              />
+              <source
+                media="(max-width: 639px)"
+                srcset="./assets/images/webp/weightlifting-sm.webp"
+                type="image/webp"
+              />
               <img
-                src="./assets/images/jpg/weightlifting.jpg"
+                src="./assets/images/webp/weightlifting.webp"
                 alt=""
-                class="subscribe-section__img"
+                class="img-fluid subscribe-section__img"
+                width="640"
+                height="427"
               />
             </picture>
           </div>
@@ -477,6 +534,8 @@
                 src="./assets/images/webp/subscribe.webp"
                 alt=""
                 class="subscribe-section__background-image"
+                width="1755"
+                height="211"
               />
             </picture>
             <p data-aos="fade-left">
@@ -495,6 +554,7 @@
                 id="subscribeForm"
                 aria-label="subscribe form"
               >
+                <label for="email">Email</label>
                 <input type="text" name="email" id="email" />
                 <button type="submit" class="subscribe-section__subscribe-btn">
                   subscribe
@@ -517,10 +577,16 @@
                 <div class="blog-section__blog">
                   <div class="blog-section__image-container">
                     <picture>
-                      <source media="(min-width: )" srcset="" type="image/" />
+                      <source
+                        media="(min-width: 640px)"
+                        srcset="./assets/images/webp/blog1.webp"
+                        type="image/webp"
+                      />
                       <img
-                        src="./assets/images/jpg/victor.jpg"
+                        src="./assets/images/webp/blog1.webp"
                         alt="BLOG1 IMAGE"
+                        width="360"
+                        height="240"
                       />
                     </picture>
                   </div>
@@ -536,10 +602,16 @@
                 <div class="blog-section__blog">
                   <div class="blog-section__image-container">
                     <picture>
-                      <source media="(min-width: )" srcset="" type="image/" />
+                      <source
+                        media="(min-width: 640px)"
+                        srcset="./assets/images/webp/blog2.webp"
+                        type="image/webp"
+                      />
                       <img
-                        src="./assets/images/jpg/hero-bg-about.jpg"
+                        src="./assets/images/webp/blog2.webp"
                         alt="BLOG2 IMAGE"
+                        width="360"
+                        height="240"
                       />
                     </picture>
                   </div>
@@ -555,10 +627,16 @@
                 <div class="blog-section__blog">
                   <div class="blog-section__image-container">
                     <picture>
-                      <source media="(min-width: )" srcset="" type="image/" />
+                      <source
+                        media="(min-width: 640px)"
+                        srcset="./assets/images/webp/blog3.webp"
+                        type="image/webp"
+                      />
                       <img
-                        src="./assets/images/jpg/luis-vidal-FodEsaNZs48-unsplash.jpg"
+                        src="./assets/images/webp/blog3.webp"
                         alt="BLOG3 IMAGE"
+                        width="360"
+                        height="240"
                       />
                     </picture>
                   </div>
@@ -587,19 +665,22 @@
         <div class="container">
           <div class="row">
             <picture>
-              <source media="(min-width: 640px)" srcset="" type="image/" />
               <img
-                src="./assets/images/png/testimonials.png"
-                alt=""
+                src="./assets/images/webp/testimonials.webp"
+                alt="background text"
                 class="testimonials-section__background-image"
+                width="1727"
+                height="184"
               />
             </picture>
             <div class="col-12 col-lg-6 left_col" data-aos="fade-right">
               <picture>
-                <source media="(min-width: 640px)" srcset="" type="image/" />
                 <img
-                  src="./assets/images/png/pexels-zakaria-boumliha-2827400 1.png"
+                  src="./assets/images/webp/testimonial-img.webp"
                   alt=""
+                  class="img-fluid"
+                  width="522"
+                  height="633"
                 />
               </picture>
             </div>
@@ -707,7 +788,12 @@
             <div class="logo-container">
               <picture>
                 <source media="(min-width: 640px)" srcset="" type="image/" />
-                <img src="./assets/images/png/logo.png" alt="be strong" />
+                <img
+                  src="./assets/images/png/logo.png"
+                  alt="be strong"
+                  width="120"
+                  height="40"
+                />
               </picture>
             </div>
             <div class="info">

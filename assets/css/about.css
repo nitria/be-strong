@@ -741,7 +741,7 @@ footer .copyright p {
 }
 
 .trainers-section {
-  background: rgba(16, 15, 15, 0.95) url("../images/jpg/trainers_bg_image.jpg") no-repeat center;
+  background: rgba(16, 15, 15, 0.95) url("../images/webp/trainers_bg_image.webp") no-repeat center;
   background-size: cover;
   padding: 50px 0;
 }

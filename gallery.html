@@ -52,7 +52,7 @@
       sizes="16x16"
       href="assets/images/favicon/favicon-16x16.png"
     />
-    <link rel="manifest" href="/site.webmanifest.json" />
+    <link rel="manifest" href="./manifest.json" />
     <!--LIGHTBOX-->
     <link rel="stylesheet" href="./assets/css/lightbox.min.css" />
     <!-- Bootstrap -->
@@ -80,6 +80,8 @@
               src="./assets/images/png/logo.png"
               alt="be strong"
               class="header-logo"
+              width="120"
+              height="40"
           /></a>
           <button
             class="navbar-toggler"
@@ -102,12 +104,12 @@
                 >
                 <span
                   class="dropdown-toggle"
-                  id="navbarDropdown"
+                  id="homeDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 ></span>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <ul class="dropdown-menu" aria-labelledby="homeDropdown">
                   <li>
                     <a class="dropdown-item" href="home2.html">Home 2</a>
                   </li>
@@ -131,12 +133,12 @@
                 <a class="nav-link active" href="gallery.html">Gallery</a>
                 <span
                   class="dropdown-toggle"
-                  id="navbarDropdown"
+                  id="galleryDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 ></span>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <ul class="dropdown-menu" aria-labelledby="galleryDropdown">
                   <li>
                     <a class="dropdown-item" href="gallery-three-column.html"
                       >Gallery-three-column</a
@@ -153,12 +155,12 @@
                 <a class="nav-link" href="blog.html">Blog</a>
                 <span
                   class="dropdown-toggle"
-                  id="navbarDropdown"
+                  id="blogDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 ></span>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <ul class="dropdown-menu" aria-labelledby="blogDropdown">
                   <li>
                     <a class="dropdown-item" href="blog-sidebar.html"
                       >Blog Sidebar</a
@@ -203,73 +205,97 @@
           <div class="row">
             <div class="gallery-grid">
               <div class="pics img1">
-                <a href="assets/images/jpg/img1.jpg" data-lightbox="mygallery">
+                <a
+                  href="assets/images/webp/img1.webp"
+                  data-lightbox="mygallery"
+                >
                   <img
                     class="img-fluid"
-                    src="assets/images/jpg/img1.jpg"
+                    src="assets/images/webp/img1.webp"
                     alt="Card image cap"
                   />
                 </a>
               </div>
               <div class="pics img2">
-                <a href="assets/images/jpg/img2.jpg" data-lightbox="mygallery">
+                <a
+                  href="assets/images/webp/img2.webp"
+                  data-lightbox="mygallery"
+                >
                   <img
                     class="img-fluid"
-                    src="assets/images/jpg/img2.jpg"
+                    src="assets/images/webp/img2.webp"
                     alt="Card image cap"
                   />
                 </a>
               </div>
               <div class="pics img3">
-                <a href="assets/images/jpg/img3.jpg" data-lightbox="mygallery">
+                <a
+                  href="assets/images/webp/img3.webp"
+                  data-lightbox="mygallery"
+                >
                   <img
                     class="img-fluid"
-                    src="assets/images/jpg/img3.jpg"
+                    src="assets/images/webp/img3.webp"
                     alt="Card image cap"
                   />
                 </a>
               </div>
               <div class="pics img4">
-                <a href="assets/images/jpg/img4.jpg" data-lightbox="mygallery">
+                <a
+                  href="assets/images/webp/img4.webp"
+                  data-lightbox="mygallery"
+                >
                   <img
                     class="img-fluid"
-                    src="assets/images/jpg/img4.jpg"
+                    src="assets/images/webp/img4.webp"
                     alt="Card image cap"
                   />
                 </a>
               </div>
               <div class="pics img5">
-                <a href="assets/images/jpg/img5.jpg" data-lightbox="mygallery">
+                <a
+                  href="assets/images/webp/img5.webp"
+                  data-lightbox="mygallery"
+                >
                   <img
                     class="img-fluid"
-                    src="assets/images/jpg/img5.jpg"
+                    src="assets/images/webp/img5.webp"
                     alt="Card image cap"
                   />
                 </a>
               </div>
               <div class="pics img6">
-                <a href="assets/images/jpg/img6.jpg" data-lightbox="mygallery">
+                <a
+                  href="assets/images/webp/img6.webp"
+                  data-lightbox="mygallery"
+                >
                   <img
                     class="img-fluid"
-                    src="assets/images/jpg/img6.jpg"
+                    src="assets/images/webp/img6.webp"
                     alt="Card image cap"
                   />
                 </a>
               </div>
               <div class="pics img7">
-                <a href="assets/images/jpg/img7.jpg" data-lightbox="mygallery">
+                <a
+                  href="assets/images/webp/img7.webp"
+                  data-lightbox="mygallery"
+                >
                   <img
                     class="img-fluid"
-                    src="assets/images/jpg/img7.jpg"
+                    src="assets/images/webp/img7.webp"
                     alt="Card image cap"
                   />
                 </a>
               </div>
               <div class="pics img8">
-                <a href="assets/images/jpg/img8.jpg" data-lightbox="mygallery">
+                <a
+                  href="assets/images/webp/img8.webp"
+                  data-lightbox="mygallery"
+                >
                   <img
                     class="img-fluid"
-                    src="assets/images/jpg/img8.jpg"
+                    src="assets/images/webp/img8.webp"
                     alt="Card image cap"
                   />
                 </a>
@@ -287,7 +313,12 @@
             <div class="logo-container">
               <picture>
                 <source media="(min-width: 640px)" srcset="" type="image/" />
-                <img src="./assets/images/png/logo.png" alt="be strong" />
+                <img
+                  src="./assets/images/png/logo.png"
+                  alt="be strong"
+                  width="120"
+                  height="40"
+                />
               </picture>
             </div>
             <div class="info">
@@ -300,16 +331,24 @@
               <h3>Follow us</h3>
               <ul>
                 <li>
-                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" aria-label="facebook social icon"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
                 </li>
                 <li>
-                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#" aria-label="instagram social icon"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
                 </li>
                 <li>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#" aria-label="twitter social icon"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
                 </li>
                 <li>
-                  <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                  <a href="#" aria-label="pinterest social icon"
+                    ><i class="fab fa-pinterest-p"></i
+                  ></a>
                 </li>
               </ul>
             </div>

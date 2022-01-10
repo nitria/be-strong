@@ -6,8 +6,8 @@
   align-items: center;
   justify-content: flex-end;
   height: calc(734px / 2);
-  background: $bgColor url("../../assets/images/jpg/hero-bg-contact.jpg") no-repeat
-    center top;
+  background: $bgColor url("../../assets/images/webp/hero-bg-contact.webp")
+    no-repeat center top;
   background-size: cover;
   .container {
     position: absolute;
@@ -52,7 +52,7 @@
 }
 .contact-info-section {
   padding: 50px 0;
-  background: #ffffff url("../images/png/alluraCity.png") no-repeat center;
+  background: #ffffff url("../images/webp/alluraCity.webp") no-repeat center;
   background-size: 1000px 590px;
   header {
     max-width: 350px;
@@ -112,7 +112,7 @@
 }
 .contact-form-section {
   background: rgba($color: #100f0f, $alpha: 0.9)
-    url("../images/jpg/google-maps.jpg") no-repeat center;
+    url("../images/webp/google-maps.webp") no-repeat center;
   background-size: cover;
   .contact-form-section__column {
     padding: 50px 0;

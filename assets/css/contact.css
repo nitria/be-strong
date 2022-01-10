@@ -500,7 +500,7 @@ footer .copyright p {
       -ms-flex-pack: end;
           justify-content: flex-end;
   height: calc(734px / 2);
-  background: rgba(16, 15, 15, 0.95) url("../../assets/images/jpg/hero-bg-contact.jpg") no-repeat center top;
+  background: rgba(16, 15, 15, 0.95) url("../../assets/images/webp/hero-bg-contact.webp") no-repeat center top;
   background-size: cover;
 }
 
@@ -562,7 +562,7 @@ footer .copyright p {
 
 .contact-info-section {
   padding: 50px 0;
-  background: #ffffff url("../images/png/alluraCity.png") no-repeat center;
+  background: #ffffff url("../images/webp/alluraCity.webp") no-repeat center;
   background-size: 1000px 590px;
 }
 
@@ -635,7 +635,7 @@ footer .copyright p {
 }
 
 .contact-form-section {
-  background: rgba(16, 15, 15, 0.9) url("../images/jpg/google-maps.jpg") no-repeat center;
+  background: rgba(16, 15, 15, 0.9) url("../images/webp/google-maps.webp") no-repeat center;
   background-size: cover;
 }
 

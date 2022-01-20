@@ -8,19 +8,17 @@ const urls = [
 ];
 
 function fetchUrls() {
-  const titlesArray = [];
   urls.forEach((url) => {
     $.get(url, function (html) {
       $(html)
         .find("h2.blogTitle")
         .each(function () {
           var text = $(this).text();
-          titlesArray.push(`<li><a href="#">${text}</a></li>`);
+          const titles = `<li><a href="#">${text}</a></li>`;
+          $(".searchResults").append(titles);
         });
     });
   });
-  $(".searchResults").append(titlesArray);
-  console.log(titlesArray);
 }
 
 $("#search").change(() => {
@@ -28,9 +26,7 @@ $("#search").change(() => {
   // for (let i = 0; i < titlesArray.length; i++)
   if ($("#search").val() === "") {
     $(".searchResults").css({ display: "none" });
-    return;
   } else {
-    fetchUrls();
     $(".searchResults").css({ display: "block" });
   }
 });

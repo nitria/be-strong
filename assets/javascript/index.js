@@ -7,35 +7,31 @@ const urls = [
   "https://nitria.github.io/be-strong/article.html",
 ];
 
-urls.forEach((url) => {
-  $.get(url, function (html) {
-    $(html)
-      .find("h2.blogTitle")
-      .each(function () {
-        var text = $(this).text();
-        console.log(text);
-      });
+function fetchUrls() {
+  const titlesArray = [];
+  urls.forEach((url) => {
+    $.get(url, function (html) {
+      $(html)
+        .find("h2.blogTitle")
+        .each(function () {
+          var text = $(this).text();
+          titlesArray.push(`<li><a href="#">${text}</a></li>`);
+        });
+    });
   });
-});
-// urls.forEach((url) => {
-//   $.get(url, (data) => {
-//     $(data)
-//       .find("")
-//       .each(() => {
-//         var text = $(this).html();
-//         console.log(text);
-//       });
-//   });
-// });
+  $(".searchResults").append(titlesArray);
+  console.log(titlesArray);
+}
 
-$("#search").keypress((e) => {
-  if (e.which === 13) {
-    var value = $("#search").val().toLowerCase();
-
-    if ($("#search").val() === "") {
-      return;
-    } else {
-    }
+$("#search").change(() => {
+  var value = $("#search").val().toLowerCase();
+  // for (let i = 0; i < titlesArray.length; i++)
+  if ($("#search").val() === "") {
+    $(".searchResults").css({ display: "none" });
+    return;
+  } else {
+    fetchUrls();
+    $(".searchResults").css({ display: "block" });
   }
 });
 

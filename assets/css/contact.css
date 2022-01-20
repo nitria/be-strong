@@ -207,6 +207,24 @@ header .navbar .navbar-collapse.show {
           transform: scale(1) translate(0%, 0%);
 }
 
+header .navbar .navbar-collapse .searchResults {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  list-style: none;
+}
+
+header .navbar .navbar-collapse .searchResults li {
+  padding: 0.3rem 0;
+}
+
+header .navbar .navbar-collapse .searchResults li a {
+  color: #000000;
+  text-decoration: none;
+}
+
 body main {
   position: relative;
   top: 0px;

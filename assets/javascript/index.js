@@ -1,12 +1,40 @@
 //Search Bar//
+const urls = [
+  "https://nitria.github.io/be-strong/",
+  "https://nitria.github.io/be-strong/about.html",
+  "https://nitria.github.io/be-strong/blog.html",
+  "https://nitria.github.io/be-strong/contact.html",
+  "https://nitria.github.io/be-strong/article.html",
+];
+
+urls.forEach((url) => {
+  $.get(url, function (html) {
+    $(html)
+      .find("h2.blogTitle")
+      .each(function () {
+        var text = $(this).text();
+        console.log(text);
+      });
+  });
+});
+// urls.forEach((url) => {
+//   $.get(url, (data) => {
+//     $(data)
+//       .find("")
+//       .each(() => {
+//         var text = $(this).html();
+//         console.log(text);
+//       });
+//   });
+// });
+
 $("#search").keypress((e) => {
   if (e.which === 13) {
     var value = $("#search").val().toLowerCase();
-    console.log(value);
+
     if ($("#search").val() === "") {
       return;
     } else {
-      $("body").offset().top;
     }
   }
 });

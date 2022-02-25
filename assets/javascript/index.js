@@ -112,7 +112,7 @@ $(".calculate").on("click", () => {
 
 //START COUNTER WHEN IN VIEW//
 if (window.location.pathname === "/be-strong/about.html") {
-  console.log("about");
+
   $(window).on("scroll", () => {
     const sectionTop = $(".numbers-section").offset().top;
     const sectionHeight = $(".numbers-section").outerHeight();

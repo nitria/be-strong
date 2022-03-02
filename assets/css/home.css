@@ -210,10 +210,14 @@ header .navbar .navbar-collapse.show {
 header .navbar .navbar-collapse .searchResults {
   position: absolute;
   top: 100px;
-  left: 0;
-  width: 100%;
+  right: 0;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   background-color: #ffffff;
   list-style: none;
+  padding: 0.5rem;
+  display: none;
 }
 
 header .navbar .navbar-collapse .searchResults li {
@@ -223,6 +227,7 @@ header .navbar .navbar-collapse .searchResults li {
 header .navbar .navbar-collapse .searchResults li a {
   color: #000000;
   text-decoration: none;
+  font-size: 1rem;
 }
 
 body main {
@@ -915,7 +920,7 @@ footer .copyright p {
   overflow: hidden;
 }
 
-.subscribe-section .right_col p {
+.subscribe-section .right_col h2 {
   color: #ffffff;
   font-size: 1.1rem;
   line-height: 1.5rem;
@@ -1145,7 +1150,7 @@ footer .copyright p {
   height: 146px;
 }
 
-.testimonials-section .right_col .testimonials-section__testimonials p {
+.testimonials-section .right_col .testimonials-section__testimonials h2 {
   color: #ffffff;
   font-size: 1.1rem;
   letter-spacing: 1px;
@@ -1323,7 +1328,7 @@ footer .copyright p {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
-  .subscribe-section .right_col p {
+  .subscribe-section .right_col h2 {
     max-width: 592px;
     width: 100%;
     font-size: 1.9rem;
@@ -1371,7 +1376,7 @@ footer .copyright p {
     padding: 1rem 2rem;
     height: 246px;
   }
-  .testimonials-section .right_col .testimonials-section__testimonials p {
+  .testimonials-section .right_col .testimonials-section__testimonials h2 {
     font-size: 1.8rem;
     margin: 0 auto;
     line-height: initial;

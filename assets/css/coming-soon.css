@@ -210,10 +210,14 @@ header .navbar .navbar-collapse.show {
 header .navbar .navbar-collapse .searchResults {
   position: absolute;
   top: 100px;
-  left: 0;
-  width: 100%;
+  right: 0;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   background-color: #ffffff;
   list-style: none;
+  padding: 0.5rem;
+  display: none;
 }
 
 header .navbar .navbar-collapse .searchResults li {
@@ -223,6 +227,7 @@ header .navbar .navbar-collapse .searchResults li {
 header .navbar .navbar-collapse .searchResults li a {
   color: #000000;
   text-decoration: none;
+  font-size: 1rem;
 }
 
 body main {

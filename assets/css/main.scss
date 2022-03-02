@@ -331,6 +331,7 @@ footer {
   position: fixed;
   bottom: 2rem;
   right: 2rem;
+  z-index: 5;
   .fas {
     font-size: 3rem;
     color: $primaryColor;

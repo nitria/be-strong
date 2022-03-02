@@ -409,6 +409,7 @@ footer .copyright p {
   position: fixed;
   bottom: 2rem;
   right: 2rem;
+  z-index: 5;
 }
 
 .back-to-top .fas {
